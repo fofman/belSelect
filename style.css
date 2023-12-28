@@ -1,0 +1,7 @@
+.belSelezionato{
+    padding: 2px 7px 2px 5px;
+    margin: 0 3px;
+    border:1px solid black;
+    border-radius: 100px;
+    user-select: none;
+}
