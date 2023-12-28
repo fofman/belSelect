@@ -3,6 +3,7 @@ document.querySelectorAll(".belSelect").forEach(select => {
         let indiceSelezionato = select.selectedIndex;
         let opzioneSelezionata = select.options[indiceSelezionato];
         opzioneSelezionata.hidden = true;
+        select.value="";
         let boxSelezionato = document.createElement("label");
         boxSelezionato.className="belSelezionato";
         boxSelezionato.innerHTML = `<input type="checkbox" value="${opzioneSelezionata.value}" name="${select.id}[]" checked hidden> <span class="belSelect-x">×</span> <span class="belSelect-optText">${opzioneSelezionata.text}</span>`
